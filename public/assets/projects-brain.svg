@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#9DC866" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Brain - Continuous Scribble Line -->
+  <path d="M50,120 C40,100 40,60 70,50 C80,45 100,40 120,50 C140,60 160,50 170,70 C180,90 180,120 160,140 C140,160 110,170 80,160 C60,150 50,130 50,120" />
+  
+  <!-- Internal Loops -->
+  <path d="M70,70 C80,50 100,60 90,80 C80,100 60,90 70,110" />
+  <path d="M110,70 C120,50 140,60 130,80 C120,100 140,110 150,90" />
+  <path d="M90,110 C100,130 130,120 120,100 C110,80 90,90 90,110" />
+  <path d="M140,110 C150,130 170,120 160,100" />
+</svg>

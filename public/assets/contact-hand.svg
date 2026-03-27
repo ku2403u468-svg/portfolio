@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#9DC866" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Hand Outline - Open Palm -->
+  <path d="M50,180 C50,160 50,140 40,130 C35,120 30,120 30,100 C30,80 45,60 60,65 C70,70 70,90 70,105" /> <!-- Thumb -->
+  <path d="M70,105 L75,40 C75,25 95,25 100,40 L105,105" /> <!-- Index -->
+  <path d="M105,105 L110,20 C110,5 130,5 135,20 L140,105" /> <!-- Middle -->
+  <path d="M140,105 L145,30 C145,15 160,20 165,35 L160,110" /> <!-- Ring -->
+  <path d="M160,110 L165,70 C165,60 180,65 180,80 L170,150 C170,180 140,190 100,190" /> <!-- Pinky & Palm -->
+</svg>
