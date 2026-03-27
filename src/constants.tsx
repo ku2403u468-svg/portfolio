@@ -4,11 +4,10 @@ export const PERSONAL_INFO = {
   name: "Ananthula Thanvi",
   initials: "AT",
   title: "communication design student",
-  email: "ananthula.thanvi@example.com", 
+  email: "thanvianathula0@gmail.com", 
   socials: {
-    linkedin: "#",
-    instagram: "#",
-    behance: "#"
+    linkedin: "",
+    behance: ""
   }
 };
 
