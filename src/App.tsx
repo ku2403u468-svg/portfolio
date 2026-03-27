@@ -56,7 +56,7 @@ export default function App() {
 
       <AnimatePresence mode="wait">
         {selectedProject ? (
-          <motion.div key="project-detail" className="w-full">
+          <motion.div key="project-detail" className="w-full relative z-10">
             <ProjectDetail 
               project={selectedProject} 
               onBack={() => setSelectedProject(null)} 
@@ -68,6 +68,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            className="relative z-10"
           >
             <div id="home">
               <Hero />

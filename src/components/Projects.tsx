@@ -21,14 +21,15 @@ export default function Projects({ onProjectClick }: ProjectsProps) {
       <div className="container mx-auto px-8">
         
         {/* Heading */}
-        <div className="flex items-center mb-12 relative">
-          <div className="absolute -top-16 left-0">
+        <div className="flex items-center mb-12 relative pl-0 md:pl-20 lg:pl-36">
+          <div className="absolute -top-16 left-0 hidden lg:block">
              <img 
                src="https://i.ibb.co/whQVYWGH/Screenshot-2026-02-21-at-22-51-03-removebg-preview.png" 
                className="w-32 h-32 object-contain opacity-80" 
+               alt="Projects decorative"
              />
           </div>
-          <div className="ml-36 border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
+          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
              <h2 className="font-serif text-6xl text-brand-red">Projects</h2>
           </div>
         </div>

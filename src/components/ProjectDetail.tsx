@@ -18,15 +18,15 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
     >
       <button 
         onClick={onBack}
-        className="fixed top-24 left-8 z-50 flex items-center text-brand-red hover:text-brand-green transition-colors"
+        className="fixed top-24 left-4 md:left-8 z-50 flex items-center text-brand-red hover:text-brand-green transition-colors bg-brand-cream/80 backdrop-blur-sm p-2 rounded-md md:bg-transparent md:p-0"
       >
-        <ArrowLeft className="mr-2" /> Back to Projects
+        <ArrowLeft className="mr-2" /> <span className="hidden md:inline">Back to Projects</span>
       </button>
 
-      <div className="container mx-auto max-w-5xl mt-12">
+      <div className="container mx-auto max-w-5xl mt-20 md:mt-12">
         {/* Header */}
-        <div className="mb-20">
-          <h1 className="font-serif text-5xl text-brand-red mb-4">{project.title}</h1>
+        <div className="mb-12 md:mb-20">
+          <h1 className="font-serif text-4xl md:text-5xl text-brand-red mb-4">{project.title}</h1>
           <p className="font-sans text-brand-red/60 uppercase tracking-widest text-sm">{project.category}</p>
         </div>
 
@@ -86,16 +86,18 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                 </p>
                 {project.flipbookIframe ? (
                   <div className="w-full flex justify-center py-4">
-                    <iframe 
-                      style={{ width: '550px', height: '350px' }} 
-                      src={project.flipbookIframe} 
-                      seamless={true} 
-                      scrolling="no" 
-                      frameBorder="0" 
-                      allowTransparency={true} 
-                      allowFullScreen={true}
-                      className="shadow-2xl rounded-sm"
-                    ></iframe>
+                    <div className="relative w-full max-w-[550px]" style={{ paddingBottom: 'min(63.63%, 350px)' }}>
+                      <iframe 
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                        src={project.flipbookIframe} 
+                        seamless={true} 
+                        scrolling="no" 
+                        frameBorder="0" 
+                        allowTransparency={true} 
+                        allowFullScreen={true}
+                        className="shadow-2xl rounded-sm"
+                      ></iframe>
+                    </div>
                   </div>
                 ) : project.flipbookImages && (
                   <div className="w-full flex justify-center py-4">

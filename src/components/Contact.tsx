@@ -10,15 +10,15 @@ export default function Contact() {
       <div className="container mx-auto px-8">
         
         {/* Heading */}
-        <div className="flex items-center mb-20 relative">
-          <div className="absolute -top-4 left-0">
+        <div className="flex items-center mb-20 relative pl-0 md:pl-24 lg:pl-52">
+          <div className="absolute -top-4 left-0 hidden lg:block">
              <img 
                src="https://i.ibb.co/RGb1pccc/Screenshot-2026-02-21-at-22-51-10-removebg-preview.png" 
                className="w-48 h-48 object-contain opacity-40" 
                alt="Contact decorative"
              />
           </div>
-          <div className="ml-52 border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
+          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
              <h2 className="font-serif text-6xl text-brand-red">Contact</h2>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Navbar({ currentSection, onNavigate }: NavbarProps) {
       >
         {PERSONAL_INFO.initials}
       </div>
-      <div className="flex gap-12">
+      <div className="flex gap-6 md:gap-12">
         {['About', 'Projects', 'Contact'].map((item) => (
           <button
             key={item}

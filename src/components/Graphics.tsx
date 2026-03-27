@@ -14,7 +14,7 @@ export const HandIcon = ({ className }: { className?: string }) => (
 );
 
 export const BackgroundCurves = () => (
-  <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+  <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
     <motion.svg 
       className="absolute top-0 right-0 h-full w-full opacity-60" 
       viewBox="0 0 1000 1000" 
@@ -89,7 +89,7 @@ export const BackgroundCurves = () => (
 );
 
 export const GlobalScrollLines = () => (
-  <div className="fixed right-4 md:right-8 top-0 bottom-0 flex items-center z-50 pointer-events-none w-16 overflow-hidden">
+  <div className="fixed right-2 md:right-8 top-0 bottom-0 flex items-center z-0 pointer-events-none w-8 md:w-16 overflow-hidden">
     <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 60 1000" xmlns="http://www.w3.org/2000/svg">
       {/* Red Wavy Line - Static */}
       <motion.path

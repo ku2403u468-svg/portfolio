@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="absolute bottom-0 left-[-20px] w-24 h-32 bg-brand-orange/80 transform -rotate-12 -z-10" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}></div>
 
           {/* Image */}
-          <div className="relative z-10 w-[350px] h-[450px] overflow-hidden rounded-t-full border-b-0">
+          <div className="relative z-10 w-full max-w-[350px] aspect-[350/450] overflow-hidden rounded-t-full border-b-0">
              <img 
                src="https://i.ibb.co/0pYWHGPK/68be6548-5dae-46b3-bcd5-a6e9a5255e7c-removebg-preview.png" 
                alt={PERSONAL_INFO.name}
@@ -33,7 +33,7 @@ export default function Hero() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-6xl md:text-8xl text-brand-red mb-6 leading-tight"
+            className="font-serif text-5xl md:text-7xl lg:text-8xl text-brand-red mb-6 leading-tight"
           >
             {PERSONAL_INFO.name.split(' ')[0]} <br />
             {PERSONAL_INFO.name.split(' ')[1]}
