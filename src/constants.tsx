@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   title: "communication design student",
   email: "thanvianathula0@gmail.com", 
   socials: {
-    linkedin: "www.linkedin.com/in/thanvi-ananthula-206570323",
+    linkedin: "https://www.linkedin.com/in/thanvi-ananthula-206570323",
     behance: "https://www.behance.net/thanviananthula1"
   }
 };
