@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
+import FlipBook from './FlipBook';
 
 interface ProjectDetailProps {
   project: any;
@@ -66,8 +67,8 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
             </div>
             <div className="md:col-span-9 space-y-12">
                {project.processImages && project.processImages.map((img: string, index: number) => (
-                 <div key={index} className="border-2 border-brand-red/20 p-4 bg-white shadow-sm rounded-sm">
-                   <img src={img} alt={`Process ${index + 1}`} className="w-full h-auto object-contain max-h-[80vh]" />
+                 <div key={index} className="border-2 border-brand-red/20 p-4 bg-white shadow-sm rounded-sm aspect-video overflow-hidden">
+                   <img src={img} alt={`Process ${index + 1}`} className="w-full h-full object-cover" />
                  </div>
                ))}
             </div>
@@ -83,6 +84,24 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                 <p className="font-serif text-xl leading-relaxed text-gray-700">
                   {project.outcomeText}
                 </p>
+                {project.flipbookIframe ? (
+                  <div className="w-full flex justify-center py-4">
+                    <iframe 
+                      style={{ width: '550px', height: '350px' }} 
+                      src={project.flipbookIframe} 
+                      seamless={true} 
+                      scrolling="no" 
+                      frameBorder="0" 
+                      allowTransparency={true} 
+                      allowFullScreen={true}
+                      className="shadow-2xl rounded-sm"
+                    ></iframe>
+                  </div>
+                ) : project.flipbookImages && (
+                  <div className="w-full flex justify-center py-4">
+                    <FlipBook images={project.flipbookImages} />
+                  </div>
+                )}
                 {project.video && (
                   <div className="w-full border-2 border-brand-red/20 p-2 bg-white shadow-sm rounded-sm overflow-hidden">
                     <div className="relative w-full" style={{ paddingBottom: '70.78%' }}>
@@ -98,7 +117,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                   </div>
                 )}
               </div>
-              {!project.video && (
+              {!project.video && project.outcomeImage && (
                 <div className="border border-brand-red/20 p-2 w-full md:w-1/2 shrink-0 bg-white shadow-sm rounded-sm">
                    <img src={project.outcomeImage} alt="Outcome" className="w-full h-auto object-contain max-h-[60vh]" />
                 </div>

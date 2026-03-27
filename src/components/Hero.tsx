@@ -35,7 +35,6 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="font-serif text-6xl md:text-8xl text-brand-red mb-6 leading-tight"
           >
-            <span className="block text-brand-green text-4xl mb-2 absolute -ml-8 mt-4">•</span>
             {PERSONAL_INFO.name.split(' ')[0]} <br />
             {PERSONAL_INFO.name.split(' ')[1]}
           </motion.h1>

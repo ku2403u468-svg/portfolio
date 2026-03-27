@@ -14,7 +14,6 @@ export default function About() {
                className="w-32 h-32 object-contain opacity-80" 
              />
           </div>
-          <span className="text-brand-green text-6xl mr-4 font-serif">.</span>
           <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
              <h2 className="font-serif text-6xl text-brand-red">About</h2>
           </div>

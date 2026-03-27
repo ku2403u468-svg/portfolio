@@ -6,8 +6,8 @@ export const PERSONAL_INFO = {
   title: "communication design student",
   email: "thanvianathula0@gmail.com", 
   socials: {
-    linkedin: "",
-    behance: ""
+    linkedin: "www.linkedin.com/in/thanvi-ananthula-206570323",
+    behance: "https://www.behance.net/thanviananthula1"
   }
 };
 
@@ -68,7 +68,7 @@ export const PROJECTS = [
       "https://i.ibb.co/rGHMK9VX/Whats-App-Image-2026-03-03-at-3-08-07-PM-1.jpg",
     ],
     outcomeText: "The project resulted in a coordinated set consisting of a table runner and four matching table mats, showcasing attention to detail, design harmony, and functional aesthetics. The final outcome also included a thoughtfully designed book documenting the entire process, concept development, material exploration, and final execution, presenting the work in a comprehensive and professionally curated format.",
-    outcomeImage: "https://i.ibb.co/DDdhjFY0/Chat-GPT-Image-Mar-3-2026-02-43-32-PM.png",
+    flipbookIframe: "https://online.anyflip.com/knrak/tplk/index.html",
     tools: ['Handloom', 'Charkha', 'Bobbin winder', 'Shuttle']
   },
   {
@@ -85,7 +85,14 @@ export const PROJECTS = [
       "https://i.ibb.co/PZGf185k/Louise-fili4.png",
     ],
     outcomeText: "Fili has designed nearly 2,000 book covers and authored over twenty books, including Elegantissima and Graphique de la Rue. She also developed iconic typefaces like Montecatini, Mardell, and Marseille, blending historic techniques with modern design.",
-    outcomeImage: "https://i.ibb.co/9kR1wXSJ/blank-magazine-mockup-on-soft-texture-background-for-design-presentation-purposes-0659.jpg",
+    flipbookImages: [
+      "https://i.ibb.co/1JJqTwBz/Chat-GPT-Image-Mar-5-2026-08-23-59-AM.png", // Page 1: Cover
+      "https://i.ibb.co/Rpvswbg0/Louise-fili2.png", // Page 3: About
+      "https://i.ibb.co/PZGf185k/Louise-fili4.png", // Page 4: Typefaces
+      "https://i.ibb.co/RW6zYcH/upscaled-open-magazine-mockup-on-textured-surface-for-elegant-print-design-presentation-0566-1.png", // Page 5: Logos/Packaging
+      "https://i.ibb.co/9kR1wXSJ/blank-magazine-mockup-on-soft-texture-background-for-design-presentation-purposes-0659.jpg" // Page 8: Back Cover
+    ],
+    flipbookIframe: "https://online.anyflip.com/knrak/ysbr/index.html",
     tools: ['Lettering', 'Typography', 'Branding', 'Book Design']
   },
   {
