@@ -90,10 +90,8 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                       <iframe 
                         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
                         src={project.flipbookIframe} 
-                        seamless={true} 
                         scrolling="no" 
                         frameBorder="0" 
-                        allowTransparency={true} 
                         allowFullScreen={true}
                         className="shadow-2xl rounded-sm"
                       ></iframe>

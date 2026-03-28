@@ -101,14 +101,14 @@ export const PROJECTS = [
     category: "Typography",
     description: "Book cover and editorial illustration project.",
     image: "https://i.ibb.co/23SyfGWX/1000017284.png" ,
-    overview: "This project involves a redesign of Arundhati Roy's Booker Prize-winning novel 'The God of Small Things'. The brief required bringing the story alive in two formats: an editorial interpretation of a real-world article and a redesign of the fiction title, linked by a unified headline.",
-    concept: "The concept focuses on creating a cohesive visual narrative that bridges editorial illustration and book cover design. By using abstract and symbolic imagery, the design aims to capture the essence of the novel's themes while maintaining a consistent typographic identity across both formats.",
+    overview: "This redesigned cover for The God of Small Things draws from the novel’s quiet, introspective tone and its deep connection to place. Using a soft, painterly illustration of a lush riverside landscape, the design evokes a sense of memory, stillness, and emotional depth. The muted, earthy color palette and gentle composition reflect the subtle yet complex nature of the story, while the flowing typography mirrors the organic rhythm of the narrative. Overall, the cover aims to capture the beauty of small, fleeting moments that define the essence of the book.",
+    concept: "The concept of this cover is centered around capturing the quiet significance of everyday moments, reflecting the core idea of The God of Small Things. The serene riverside scene symbolizes memory, time, and emotional depth, while the lone figure in the boat represents introspection and solitude. The soft, painterly style and muted tones are used to evoke a sense of nostalgia and stillness, visually expressing how seemingly small, fleeting experiences hold profound meaning within the narrative.",
     processImages: [
       "https://i.ibb.co/23sQTkth/Untitled45.png",
       "https://i.ibb.co/23SyfGWX/1000017284.png" ,
       "https://i.ibb.co/HyZZP2j/cover-page-tgost.png",
     ],
-    outcomeText: "The final outcome is a unified visual identity that successfully links the editorial and book cover components. The illustrations use a rich, symbolic palette to evoke the atmosphere of the story, creating an engaging and emotionally resonant experience for the reader.",
+    outcomeText: "The outcome is a visually cohesive and immersive cover that brings together illustration, color, and typography to create a unified narrative. The design successfully establishes a strong sense of place and mood, drawing the viewer into a tranquil yet emotionally layered environment. By balancing simplicity with detail, the cover feels refined and intentional, making it suitable for a contemporary literary audience while still preserving the depth and sensitivity of The God of Small Things.",
     outcomeImage: "https://i.ibb.co/gLVv7TX7/Chat-GPT-Image-Mar-5-2026-08-51-10-AM.png",
     tools: ['Illustration', 'Typography', 'Editorial Design', 'Book Design']
   },
@@ -118,7 +118,7 @@ export const PROJECTS = [
     category: "Typography",
     description: "Freehand Telugu font family inspired by grape vines.",
     image: "https://i.ibb.co/tw4WhBw7/Screenshot-2026-02-23-235245.png",
-    overview: "This project involved creating a freehand alphabet/font family with characteristics from nature, specifically inspired by a grape vine. The brief required studying the form and characteristics of the vine—stem, root, fruit, flower, bud, tendrils, leaf, and branch—to create a type family that adapts and emotes a specific theme.",
+    overview:"Valli Vines is a conceptual branding project centered around grapes and vineyard culture, exploring the connection between nature, growth, and tradition. The project reflects an organic and rooted identity, using visual elements inspired by vines, textures, and the essence of grape cultivation to create a cohesive and earthy brand narrative.",
     concept: "The font was created in Telugu script, inspired by the physical characteristics of a grape vine. The Telugu script was chosen because its letters are both curved and structured, mirroring the organic yet defined growth of a vine.",
     processImages: [
       "https://i.ibb.co/S49y7b9q/Screenshot-2026-02-23-235052.png",
@@ -156,7 +156,7 @@ export const PROJECTS = [
     concept: "The concept focuses on a narrative transition from 'sleepy' to 'awake'. Using smooth vector animations and character-driven storytelling, the motion piece enhances the brand's personality and makes it more relatable to the audience.",
     processImages: [
       "https://i.ibb.co/RT3nx1hB/Screenshot-2026-02-15-155056.png",
-      "https://i.ibb.co/STzc2S9/Chat-GPT-Image-Feb-15-2026-04-46-49-PM.png",
+      "https://i.ibb.co/VWJJqrMT/Screenshot-2026-03-28-120852.png",
       "https://i.ibb.co/8DcM8hbz/Chat-GPT-Image-Feb-15-2026-05-39-01-PM.png",
     ],
     outcomeText: "The final motion graphics piece includes a character-led narrative and a sophisticated logo reveal. It serves as a versatile asset for social media marketing and digital brand presence, effectively capturing the viewer's attention within seconds.",
