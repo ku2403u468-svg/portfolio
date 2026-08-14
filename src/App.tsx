@@ -11,7 +11,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ProjectDetail from './components/ProjectDetail';
 import { AnimatePresence, motion } from 'motion/react';
-import { GlobalScrollLines } from './components/Graphics';
 
 import { PERSONAL_INFO } from './constants';
 
@@ -50,8 +49,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-brand-cream text-gray-900 font-sans selection:bg-brand-red selection:text-white">
-      <GlobalScrollLines />
-      
       <Navbar currentSection={currentSection} onNavigate={handleNavigate} />
 
       <AnimatePresence mode="wait">
@@ -60,6 +57,7 @@ export default function App() {
             <ProjectDetail 
               project={selectedProject} 
               onBack={() => setSelectedProject(null)} 
+              onSelectProject={(proj) => handleProjectClick(proj)}
             />
           </motion.div>
         ) : (

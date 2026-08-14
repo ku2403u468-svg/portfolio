@@ -7,19 +7,18 @@ export default function Contact() {
 
   return (
     <section id="contact" className="min-h-screen py-20 relative bg-brand-cream">
+      {/* Soft Ambient Glow on the Right Side */}
+      <div className="absolute top-1/4 -right-16 w-80 sm:w-96 h-80 bg-gradient-to-bl from-brand-orange/20 via-brand-yellow/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-12 right-6 w-64 h-64 bg-gradient-to-t from-brand-yellow/20 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+
       <div className="container mx-auto px-8">
         
         {/* Heading */}
-        <div className="flex items-center mb-20 relative pl-0 md:pl-24 lg:pl-52">
-          <div className="absolute -top-4 left-0 hidden lg:block">
-             <img 
-               src="https://i.ibb.co/RGb1pccc/Screenshot-2026-02-21-at-22-51-10-removebg-preview.png" 
-               className="w-48 h-48 object-contain opacity-40" 
-               alt="Contact decorative"
-             />
-          </div>
-          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
-             <h2 className="font-serif text-6xl text-brand-red">Contact</h2>
+        <div className="flex items-center mb-20 relative">
+          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between relative">
+             {/* Subtle Soft Continuous Gradient Glow behind Heading */}
+             <div className="absolute -top-12 -left-10 w-96 sm:w-[32rem] h-36 bg-gradient-to-r from-brand-orange/30 via-brand-yellow/30 to-brand-orange/15 rounded-full blur-3xl pointer-events-none -z-10" />
+             <h2 className="font-serif text-6xl text-brand-red relative z-10">Contact</h2>
           </div>
         </div>
 

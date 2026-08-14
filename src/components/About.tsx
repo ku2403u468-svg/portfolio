@@ -4,19 +4,18 @@ import { SKILLS } from '../constants';
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen py-20 relative overflow-hidden">
+    <section id="about" className="min-h-screen py-20 relative">
+      {/* Soft Ambient Glow on the Right Side */}
+      <div className="absolute top-1/4 -right-20 w-80 sm:w-96 h-80 bg-gradient-to-bl from-brand-orange/20 via-brand-yellow/20 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-10 w-64 h-64 bg-brand-green/10 rounded-full blur-3xl pointer-events-none -z-10" />
+
       <div className="container mx-auto px-8">
         {/* Heading */}
-        <div className="flex items-end mb-16 relative pl-0 md:pl-20 lg:pl-36">
-          <div className="absolute -top-16 left-0 hidden lg:block">
-             <img 
-               src="https://i.ibb.co/Pv4D9VnX/Screenshot-2026-02-21-at-22-50-54-removebg-preview.png" 
-               className="w-32 h-32 object-contain opacity-80" 
-               alt="About decorative"
-             />
-          </div>
-          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
-             <h2 className="font-serif text-6xl text-brand-red">About</h2>
+        <div className="flex items-end mb-16 relative">
+          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between relative">
+             {/* Organic Soft Continuous Gradient Glow behind Heading that freely blends upwards into hero */}
+             <div className="absolute -top-32 -left-16 w-[32rem] sm:w-[42rem] h-64 bg-gradient-to-br from-brand-orange/25 via-brand-yellow/25 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+             <h2 className="font-serif text-6xl text-brand-red relative z-10">About</h2>
           </div>
         </div>
 

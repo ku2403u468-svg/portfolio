@@ -1,5 +1,13 @@
 import { Share2, Users, Zap, Heart, Clock, Layout, PenTool, Monitor, Printer, Globe, Video, Image, Layers } from 'lucide-react';
 
+const shortFilmCover = "https://i.ibb.co/fVYP7S9F/Poster.png";
+const filmIdeation = "https://i.ibb.co/RTScW2X8/Untitled.png";
+const filmPrototyping = "https://i.ibb.co/YFgJtx3D/Screenshot-2026-02-05-105112.png";
+const filmEditing = "https://i.ibb.co/v4VMzNwG/Screenshot-2026-02-05-120626.png";
+const filmConceptRef = "https://i.ibb.co/DfD63QcB/IMG-1488-JPG.jpg";
+
+const goldenGlyphsDevelopment = "https://i.ibb.co/gMtqd6h7/Layout-explo.png";
+
 export const PERSONAL_INFO = {
   name: "Ananthula Thanvi",
   initials: "AT",
@@ -38,66 +46,112 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
-    id: 'typography',
-    title: "Typography",
-    category: "Typography",
-    description: "Exploration of typefaces and font development.",
-    image: "https://i.ibb.co/V0BSccGM/Screenshot-5.png",
-    overview: "The Thanvi typeface is a contemporary sans-serif font family designed and developed using FontLab. Created as a personal typographic exploration, the font reflects clarity, versatility, and structural precision. The family includes multiple weights and styles—Extra Light, Light, Regular, Bold, Black, Italic, Bold Italic, Condensed, and Expanded—making it adaptable across print and digital applications. The design emphasizes legibility while maintaining a clean, modern aesthetic suitable for branding and editorial contexts.",
-    concept: "The concept behind Thanvi was to design a typeface that balances minimalism with flexibility. Inspired by modern geometric forms and systematic typography, the letterforms are constructed with consistent stroke modulation and balanced proportions. The variations in width (Condensed and Expanded) and weight allow the typeface to function as a complete visual communication system rather than a single style. Naming the font after myself transforms it into an extension of my design identity—strong, adaptable, and structured yet expressive.",
-    processImages: [
-      "https://i.ibb.co/bjmrQp0K/Screenshot-2026-03-03-094027.png",
-      "https://i.ibb.co/20rD2rhW/Screenshot-2026-03-03-094202.png",
-      "https://i.ibb.co/WN5QChbP/Screenshot-2025-11-11-225908.png",
-    ],
-    outcomeText: "The final outcome is a cohesive and functional font family that demonstrates technical understanding of typography, weight distribution, spacing, and stylistic variation. The typeface performs effectively across different weights without losing its character, ensuring readability and visual harmony. This project strengthened my knowledge of type anatomy, kerning, and font production workflows in FontLab. Thanvi stands as both a personal branding element and a professional exploration into type design within communication design practice.",
-    outcomeImage:"https://i.ibb.co/cSwKfXrq/Screenshot-2026-03-03-141241.png",
-    tools: ['Illustrator', 'Photoshop', 'InDesign']
-  },
-  {
-    id: 'kutch-weaving',
-    title: "Kutch Weaving: The Art of Threads",
-    category: "Typography",
-    description: "Documentation and exploration of traditional handloom craft.",
-    image: "https://i.ibb.co/tMVncJGT/Screenshot-2026-02-24-000821.png",
-    overview: "This document is an exploration of Kutch weaving, a traditional handloom craft that has flourished in the arid yet culturally vibrant region of Kutch, Gujarat. It is celebrated for its complex patterns, vivid colors, and symbolic motifs.",
-    concept: "Kutch weaving is not merely a textile art; it is a narrative of heritage, passed down through skilled hands and keen eyes. Each piece is a testament to the weaver’s mastery, patience, and deep connection to tradition.",
-    processImages: [
-      "https://i.ibb.co/jksvwKnT/Whats-App-Image-2026-02-24-at-12-12-16-AM.jpg",
-      "https://i.ibb.co/60s1vYbw/Whats-App-Image-2026-03-03-at-3-08-07-PM.jpg" ,
-      "https://i.ibb.co/rGHMK9VX/Whats-App-Image-2026-03-03-at-3-08-07-PM-1.jpg",
-    ],
-    outcomeText: "The project resulted in a coordinated set consisting of a table runner and four matching table mats, showcasing attention to detail, design harmony, and functional aesthetics. The final outcome also included a thoughtfully designed book documenting the entire process, concept development, material exploration, and final execution, presenting the work in a comprehensive and professionally curated format.",
-    flipbookIframe: "https://online.anyflip.com/knrak/tplk/index.html",
-    tools: ['Handloom', 'Charkha', 'Bobbin winder', 'Shuttle']
-  },
-  {
     id: 'louise-fili',
-    title: "Louise Fili: Golden Glyphs",
-    category: "Typography",
-    description: "Pioneering graphic design and typography exploration.",
+    title: "Golden Glyphs",
+    date: "July 2025",
+    category: "Editorial & Publication Design",
+    description: "Golden Glyphs is an editorial publication that explores the life, work, and typographic philosophy of Louise Fili.",
     image: "https://i.ibb.co/1JJqTwBz/Chat-GPT-Image-Mar-5-2026-08-23-59-AM.png",
-    overview: "Louise Fili is a pioneering American graphic designer, typographer, and art director celebrated for her sophisticated use of type and timeless visual style. Her work blends modernist principles with European Art Deco and Italian influences, creating a visual language that feels both nostalgic and contemporary.",
-    concept: "Specializing in restaurant identities, food packaging, and branding, Fili emphasizes that typography is more than decoration—it is the foundation of a brand’s personality and tone. Her studio, Louise Fili Ltd., has created memorable branding for internationally recognized companies.",
-    processImages: [
-      "https://i.ibb.co/Rpvswbg0/Louise-fili2.png",
-      "https://i.ibb.co/RW6zYcH/upscaled-open-magazine-mockup-on-textured-surface-for-elegant-print-design-presentation-0566-1.png",
-      "https://i.ibb.co/PZGf185k/Louise-fili4.png",
+    overview: "Golden Glyphs is an editorial publication that explores the life, work, and typographic philosophy of Louise Fili, one of the most influential graphic designers in contemporary typography and branding. The project combines research, editorial design, typography, and visual hierarchy to present her journey, design principles, and iconic works in an engaging publication.",
+    problemStatement: "Designing an editorial publication requires balancing large amounts of information with visual clarity. The challenge was to transform extensive research on Louise Fili into a publication that is engaging, easy to navigate, and visually reflects her timeless typographic style while maintaining readability and consistency.",
+    objectives: [
+      "Design a cohesive editorial publication.",
+      "Communicate information through a strong visual hierarchy.",
+      "Apply typography as the primary design element.",
+      "Create layouts that balance text and imagery.",
+      "Develop a publication inspired by Louise Fili's design philosophy."
     ],
-    outcomeText: "Fili has designed nearly 2,000 book covers and authored over twenty books, including Elegantissima and Graphique de la Rue. She also developed iconic typefaces like Montecatini, Mardell, and Marseille, blending historic techniques with modern design.",
+    brief: "Create an editorial publication documenting the life, work, and influence of Louise Fili. The publication should present researched content using typography, grids, imagery, and publication design principles while maintaining a consistent visual identity throughout the book.",
+    targetAudience: [
+      "Graphic Design Students",
+      "Typography Enthusiasts",
+      "Editorial Designers",
+      "Design Educators",
+      "Creative Professionals"
+    ],
+    researchInsights: "The project began with researching Louise Fili's career, design philosophy, typography, branding projects, book covers, and contributions to graphic design. This research helped identify recurring characteristics in her work, including elegant typography, historical influences, refined layouts, and strong visual storytelling. These insights informed the visual direction and editorial structure of the publication.",
+    ideationExploration: "The publication was developed through multiple stages of exploration.",
+    ideationPoints: [
+      "Collected reference material about Louise Fili's work.",
+      "Studied editorial publications and typography-focused books.",
+      "Created moodboards inspired by Art Deco and Italian design influences.",
+      "Explored multiple cover concepts.",
+      "Experimented with different grid systems.",
+      "Tested typography pairings and page compositions.",
+      "Planned information hierarchy before designing the final layouts."
+    ],
+    designDecisions: {
+      intro: "Several design decisions helped shape the publication.",
+      items: [
+        {
+          title: "Typography",
+          description: "Typography became the primary visual element, reflecting Louise Fili's identity as a typographer while establishing hierarchy and rhythm across the publication."
+        },
+        {
+          title: "Grid System",
+          description: "A consistent editorial grid was used to organize content, improve readability, and create visual consistency throughout the publication."
+        },
+        {
+          title: "Colour Palette",
+          description: "A restrained colour palette was chosen to maintain focus on typography while complementing the historical and elegant nature of the subject."
+        },
+        {
+          title: "Imagery",
+          description: "Images of Louise Fili's work were carefully integrated with text to support the narrative without overwhelming the layouts."
+        },
+        {
+          title: "Information Hierarchy",
+          description: "Headings, subheadings, pull quotes, captions, and body text were organised to guide readers naturally through each section."
+        }
+      ]
+    },
+    prototyping: "The publication evolved through multiple iterations.",
+    prototypingPoints: [
+      "Thumbnail sketches",
+      "Cover exploration",
+      "Low-fidelity layouts",
+      "Typography testing",
+      "Grid refinement",
+      "Final page compositions"
+    ],
+    testingRefinement: "The publication was refined through repeated evaluation of typography, spacing, alignment, and content hierarchy.",
+    testingPoints: [
+      "Improving page balance.",
+      "Adjusting margins and whitespace.",
+      "Refining typography hierarchy.",
+      "Reorganising content for smoother reading flow.",
+      "Maintaining consistency across all spreads."
+    ],
+    ideationImage: "https://i.ibb.co/Rpvswbg0/Louise-fili2.png",
+    designDecisionsImage: "https://i.ibb.co/PZGf185k/Louise-fili4.png",
+    ideaImages: [
+      "https://i.ibb.co/1Y1tKtVM/lf.jpg",
+      "https://i.ibb.co/gZcmtsHX/images.jpg",
+      "https://i.ibb.co/j9FjsFFk/elegantissima.webp",
+      "https://i.ibb.co/4wrXc02y/Ambessa.webp",
+      "https://i.ibb.co/JWLh79cq/Pisellino-Featured-Thumbnail-01.webp",
+      "https://i.ibb.co/fVPF6hfX/louise-fili-la-grafica-della-trada-1.jpg"
+    ],
+    prototypingImage: "https://i.ibb.co/RW6zYcH/upscaled-open-magazine-mockup-on-textured-surface-for-elegant-print-design-presentation-0566-1.png",
+    developmentImage: goldenGlyphsDevelopment,
+    testingImage: "https://i.ibb.co/1JJqTwBz/Chat-GPT-Image-Mar-5-2026-08-23-59-AM.png",
+    concept: "The design concept merges Art Deco and Italian aesthetic influences with a modern grid system to celebrate Louise Fili's enduring typographic craftsmanship.",
+    outcomeText: "The final outcome is an editorial publication that presents Louise Fili's life and work through a clean and typography-driven visual language. The publication successfully combines research with editorial design principles, resulting in an informative and visually engaging reading experience.",
+    reflectionLearning: "This project strengthened my understanding of editorial design beyond arranging text and images. I learned how typography, grid systems, and information hierarchy work together to shape a reader's experience. It also deepened my appreciation for designing with consistency, restraint, and purpose while translating research into a cohesive visual narrative.",
     flipbookImages: [
-      "https://i.ibb.co/1JJqTwBz/Chat-GPT-Image-Mar-5-2026-08-23-59-AM.png", // Page 1: Cover
-      "https://i.ibb.co/Rpvswbg0/Louise-fili2.png", // Page 3: About
-      "https://i.ibb.co/PZGf185k/Louise-fili4.png", // Page 4: Typefaces
-      "https://i.ibb.co/RW6zYcH/upscaled-open-magazine-mockup-on-textured-surface-for-elegant-print-design-presentation-0566-1.png", // Page 5: Logos/Packaging
-      "https://i.ibb.co/9kR1wXSJ/blank-magazine-mockup-on-soft-texture-background-for-design-presentation-purposes-0659.jpg" // Page 8: Back Cover
+      "https://i.ibb.co/1JJqTwBz/Chat-GPT-Image-Mar-5-2026-08-23-59-AM.png",
+      "https://i.ibb.co/Rpvswbg0/Louise-fili2.png",
+      "https://i.ibb.co/PZGf185k/Louise-fili4.png",
+      "https://i.ibb.co/RW6zYcH/upscaled-open-magazine-mockup-on-textured-surface-for-elegant-print-design-presentation-0566-1.png",
+      "https://i.ibb.co/9kR1wXSJ/blank-magazine-mockup-on-soft-texture-background-for-design-presentation-purposes-0659.jpg"
     ],
     flipbookIframe: "https://online.anyflip.com/knrak/ysbr/index.html",
-    tools: ['Lettering', 'Typography', 'Branding', 'Book Design']
+    tools: ['Editorial Design', 'Grid Systems', 'Typography', 'InDesign', 'Publication Design']
   },
   {
     id: 'god-of-small-things',
     title: "The God of Small Things",
+    date: "August 2025",
     category: "Typography",
     description: "Book cover and editorial illustration project.",
     image: "https://i.ibb.co/23SyfGWX/1000017284.png" ,
@@ -113,45 +167,12 @@ export const PROJECTS = [
     tools: ['Illustration', 'Typography', 'Editorial Design', 'Book Design']
   },
   {
-    id: 'valli-the-vines',
-    title: "Valli: The Vines",
-    category: "Typography",
-    description: "Freehand Telugu font family inspired by grape vines.",
-    image: "https://i.ibb.co/tw4WhBw7/Screenshot-2026-02-23-235245.png",
-    overview:"Valli Vines is a conceptual branding project centered around grapes and vineyard culture, exploring the connection between nature, growth, and tradition. The project reflects an organic and rooted identity, using visual elements inspired by vines, textures, and the essence of grape cultivation to create a cohesive and earthy brand narrative.",
-    concept: "The font was created in Telugu script, inspired by the physical characteristics of a grape vine. The Telugu script was chosen because its letters are both curved and structured, mirroring the organic yet defined growth of a vine.",
-    processImages: [
-      "https://i.ibb.co/S49y7b9q/Screenshot-2026-02-23-235052.png",
-      "https://i.ibb.co/WNpYthkv/Screenshot-2026-02-23-235109.png",
-      "https://i.ibb.co/MkFGmqD1/Screenshot-2026-02-23-235131.png",
-    ],
-    outcomeText: "The result is a unique Telugu font family that captures the essence of the grape vine. Each character reflects the organic curves and structural integrity of the plant, creating a harmonious blend of nature and typography.",
-    outcomeImage: "https://i.ibb.co/bMPfkX8X/Screenshot-2026-03-06-021408.png",
-    tools: ['Typography', 'Lettering', 'Telugu Script', 'Illustration']
-  },
-  {
-    id: 'scripts-emotions',
-    title: "Scripts & Emotions",
-    category: "Research",
-    description: "Generational interpretation of multilingual scripts.",
-    image: "https://i.ibb.co/QtMWL0y/AS-1.png",
-    overview: "Typography plays a crucial role in multilingual communication. This research addresses the limited understanding of how different age groups emotionally perceive script variations. The study aims to identify generational differences in script perception to support inclusive typographic design.",
-    concept: "The research questions the emotional impact of script variations. It explores how visual cues like rhythm, symmetry, and spacing shape emotional interpretation, noting that younger audiences derive symbolic meaning while older groups rely on perceptual frameworks.",
-    processImages: [
-     "https://i.ibb.co/MDNVQxnw/poster-01.png",
-      "https://i.ibb.co/KxFrHRVn/Screenshot-2026-02-23-235500.png",
-      "https://i.ibb.co/KxdWGTbY/DR-Page-12-Image-0001.jpg",
-    ],
-    outcomeText: "Younger audiences (18-25) showed high emotional engagement and a preference for symbolism. Middle-aged groups (26-45) had mixed engagement, while older adults (46+) preferred clarity and structure. The study recommends integrating multiple scripts and ensuring readability for older viewers.",
-    outcomeImage: "https://i.ibb.co/QtMWL0y/AS-1.png",
-    tools: ['Surveys', 'Data Analysis', 'Typography']
-  },
-  {
     id: 'sleepy-owl-motion',
     title: "Sleepy Owl: Kinetic Branding",
+    date: "Feb 2026",
     category: "Motion Design",
     description: "Logo and poster animation for Sleepy Owl Coffee.",
-    image: "https://i.ibb.co/qMxBQkcL/AI-Image.png" ,
+    image: "https://i.ibb.co/0yqvrDsj/images.png",
     overview: "This project explores the intersection of character animation and brand identity. By bringing the 'Sleepy Owl' mascot to life, the animation communicates the brand's core message of energy and alertness through coffee.",
     concept: "The concept focuses on a narrative transition from 'sleepy' to 'awake'. Using smooth vector animations and character-driven storytelling, the motion piece enhances the brand's personality and makes it more relatable to the audience.",
     processImages: [
@@ -164,4 +185,74 @@ export const PROJECTS = [
     video: "https://player.vimeo.com/video/1173576415?badge=0&autopause=0&player_id=0&app_id=58479",
     tools: ['After Effects', 'Illustrator', 'Motion Graphics']
   },
+  {
+    id: 'is-it-that-simple',
+    title: "Is It That Simple?",
+    date: "Jan 2026",
+    category: "Motion Design",
+    description: "Short Film | Editing & Post Production",
+    image: shortFilmCover,
+    overview: "Is It That Simple? is a student short film that explores the conflict between personal aspirations and the invisible social restrictions that shape everyday decisions. The narrative follows Tara, a college student who is excited to be selected for her first acting role, only to realize that the biggest obstacles are not fictional but exist in her own reality. My role in the project was to edit the film, shaping its pacing, emotional rhythm, and narrative progression to strengthen the audience's connection with Tara's journey.",
+    problemStatement: "The story relied on subtle emotional shifts rather than dramatic events. The challenge was to edit the film in a way that gradually transformed the audience's experience from excitement and optimism to emotional restriction and introspection. Every editing decision had to support the protagonist's internal journey while maintaining a natural narrative flow.",
+    objectives: [
+      "Create an emotionally engaging narrative through editing.",
+      "Build a consistent rhythm that reflects the protagonist's emotional journey.",
+      "Strengthen the storytelling using pacing, transitions, and visual continuity.",
+      "Support the director's vision while enhancing audience engagement."
+    ],
+    brief: "Develop the final edit of the short film by organising scenes, refining pacing, improving continuity, and shaping the emotional progression of the narrative. The objective was to ensure that every cut contributed meaningfully to the story and reinforced the film's central theme.",
+    targetAudience: [
+      "Young adults",
+      "College students",
+      "Audiences interested in character-driven stories",
+      "Film festival and academic audiences"
+    ],
+    researchInsights: "Before beginning the edit, I analysed the screenplay to understand the emotional progression of the story and identify how the pacing should evolve across different scenes. I also studied how silence, pauses, reaction shots, and restrained editing could communicate emotion more effectively than rapid cuts. This helped me maintain the protagonist's perspective throughout the film while allowing the audience to experience her growing emotional conflict.",
+    ideationExploration: "The editing process involved experimenting with multiple versions of scenes to understand how different rhythms affected the narrative.",
+    ideationPoints: [
+      "Rearranging scene durations.",
+      "Testing different transition styles.",
+      "Experimenting with the length of pauses.",
+      "Comparing different pacing structures.",
+      "Refining scene order to improve emotional flow."
+    ],
+    ideationImage: filmIdeation,
+    designDecisions: [
+      "Repetitive scenes and unnecessary dialogue were trimmed to maintain narrative focus.",
+      "Jump cuts were introduced during the waiting sequence to communicate Tara's growing anxiety.",
+      "The pacing gradually shifted from open and energetic to slower and emotionally restrained, mirroring the protagonist's internal state.",
+      "Silence and carefully timed pauses were used to build emotional tension instead of relying on dramatic visual effects.",
+      "Continuity and reaction shots were prioritised to keep the audience emotionally connected with Tara."
+    ],
+    prototyping: "The edit evolved through multiple iterations.",
+    prototypingPoints: [
+      "Initial rough cut",
+      "Scene restructuring",
+      "Director feedback sessions",
+      "Refined edit",
+      "Final picture lock"
+    ],
+    prototypingImage: filmPrototyping,
+    testingRefinement: "The final edit was refined through continuous collaboration with the director.",
+    testingPoints: [
+      "Adjusting the duration of pauses.",
+      "Reinvolving scene transitions.",
+      "Improving continuity.",
+      "Balancing the overall pacing.",
+      "Making small edits that strengthened emotional impact without disrupting the natural flow of the story."
+    ],
+    testingImage: filmEditing,
+    concept: "The editing concept focuses on character-driven emotional rhythm. Through calculated restraint, pacing shifts, and intentional pauses, the edit mirrors Tara's internal struggle between outward optimism and social restrictions.",
+    conceptImage: filmConceptRef,
+    processImages: [
+      filmIdeation,
+      filmPrototyping,
+      filmEditing
+    ],
+    outcomeText: "The completed film presents a character-driven narrative that communicates emotional change through subtle editing choices. Rather than relying on explicit exposition, the final edit encourages the audience to experience the protagonist's journey through rhythm, silence, pacing, and visual storytelling.",
+    reflectionLearning: "Working on Is It That Simple? deepened my understanding of editing as a storytelling tool rather than a technical process. I learned that pacing, continuity, and restraint can significantly influence how an audience interprets a story. The project also strengthened my ability to collaborate with a director, iterate on feedback, and make intentional editing decisions that supported both the narrative and the emotional experience.",
+    video: "https://www.youtube.com/embed/L2PLx36Q8Qo?si=yMOFen8XNTmXQSV9",
+    tools: ['Adobe Premiere Pro', 'Film Editing', 'Color Grading', 'Post Production', 'Pacing & Continuity']
+  }
 ];
+

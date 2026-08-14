@@ -10,7 +10,7 @@ interface ProjectsProps {
 export default function Projects({ onProjectClick }: ProjectsProps) {
   const [filter, setFilter] = useState('All');
 
-  const categories = ['All', 'Typography', 'Research', 'Motion Design'];
+  const categories = ['All', ...Array.from(new Set(PROJECTS.map(project => project.category)))];
 
   const filteredProjects = filter === 'All' 
     ? PROJECTS 
@@ -18,19 +18,18 @@ export default function Projects({ onProjectClick }: ProjectsProps) {
 
   return (
     <section id="projects" className="min-h-screen py-20 relative">
+      {/* Soft Ambient Glow on the Right Side */}
+      <div className="absolute top-1/4 -right-16 w-80 sm:w-[28rem] h-80 bg-gradient-to-l from-brand-orange/20 via-brand-yellow/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-1/4 -right-10 w-72 h-72 bg-gradient-to-bl from-brand-red/15 via-brand-yellow/10 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+
       <div className="container mx-auto px-8">
         
         {/* Heading */}
-        <div className="flex items-center mb-12 relative pl-0 md:pl-20 lg:pl-36">
-          <div className="absolute -top-16 left-0 hidden lg:block">
-             <img 
-               src="https://i.ibb.co/whQVYWGH/Screenshot-2026-02-21-at-22-51-03-removebg-preview.png" 
-               className="w-32 h-32 object-contain opacity-80" 
-               alt="Projects decorative"
-             />
-          </div>
-          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between">
-             <h2 className="font-serif text-6xl text-brand-red">Projects</h2>
+        <div className="flex items-center mb-12 relative">
+          <div className="border-b-4 border-brand-red w-full pb-2 flex items-end justify-between relative">
+             {/* Subtle Soft Continuous Gradient Glow behind Heading */}
+             <div className="absolute -top-12 -left-10 w-96 sm:w-[32rem] h-36 bg-gradient-to-r from-brand-orange/30 via-brand-yellow/30 to-brand-orange/15 rounded-full blur-3xl pointer-events-none -z-10" />
+             <h2 className="font-serif text-6xl text-brand-red relative z-10">Projects</h2>
           </div>
         </div>
 
@@ -65,9 +64,16 @@ export default function Projects({ onProjectClick }: ProjectsProps) {
                 onClick={() => onProjectClick(project)}
                 className="cursor-pointer group"
               >
-                <h3 className="font-sans text-brand-red text-lg tracking-widest uppercase mb-2 pl-2">
-                  {project.id.replace(/-/g, ' ')}
-                </h3>
+                <div className="flex items-baseline justify-between mb-2 px-1 gap-2">
+                  <h3 className="font-sans text-brand-red text-base md:text-lg tracking-wider uppercase font-semibold whitespace-nowrap">
+                    {project.title}
+                  </h3>
+                  {project.date && (
+                    <span className="font-mono text-brand-red text-xs md:text-sm font-semibold tracking-widest uppercase whitespace-nowrap">
+                      {project.date}
+                    </span>
+                  )}
+                </div>
                 
                 {/* Double Border Card */}
                 <div className="relative">
